@@ -15,10 +15,7 @@ import notify from "../../utils/toast";
 
 import "./style.css";
 
-const Form = ({
-  signInCallback,
-  signInWithGoogleCallback,
-}) => {
+const Form = ({ signInCallback, signInWithGoogleCallback }) => {
   const navigate = useNavigate();
   const [values, setValues] = useState({
     email: "",
@@ -37,6 +34,7 @@ const Form = ({
         <FormGroup className="mt-3">
           <FormLabel>Email address</FormLabel>
           <input
+            label="Email"
             required
             type="email"
             className="form-control"
@@ -50,6 +48,7 @@ const Form = ({
         <FormGroup className="mt-3">
           <FormLabel>Password</FormLabel>
           <input
+            label="Password"
             required
             type="password"
             className="form-control"
@@ -85,7 +84,9 @@ const Form = ({
               <Button
                 type="submit"
                 className="btn btn-primary btn-block mt-4 action-btn"
-                onClick={() => {navigate("/signup")}}
+                onClick={() => {
+                  navigate("/signup");
+                }}
               >
                 Sign-Up
               </Button>
