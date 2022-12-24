@@ -1,9 +1,4 @@
-/* 
-#0d21a1
-#011638 
-eec643
-*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
 
 body {
   overflow-x: hidden;
@@ -15,13 +10,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Righteous", cursive !important;
   box-sizing: border-box;
-  background: #2e3134 !important;
+  /* background: #2e3134 !important;
   background-size: 147px 60.480000000000004px;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 147 60.480000000000004" width="147" height="60.480000000000004" style="opacity: 0.05; filter: grayscale(0.6);"><text x="0em" y="1em" font-size="28" transform="rotate(0 17.5 16.8)">📔</text><text x="1.75em" y="1em" font-size="28" transform="rotate(0 66.5 16.8)">💡</text><text x="3.5em" y="1em" font-size="28" transform="rotate(0 115.5 16.8)">✒️</text></svg>') !important;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 147 60.480000000000004" width="147" height="60.480000000000004" style="opacity: 0.05; filter: grayscale(0.6);"><text x="0em" y="1em" font-size="28" transform="rotate(0 17.5 16.8)">📔</text><text x="1.75em" y="1em" font-size="28" transform="rotate(0 66.5 16.8)">💡</text><text x="3.5em" y="1em" font-size="28" transform="rotate(0 115.5 16.8)">✒️</text></svg>') !important; */
 }
 
 * {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Fredoka', sans-serif;
 }
 
 .debug {
@@ -117,8 +112,8 @@ button.profile-btn {
 
 .nice-dates-day {
   transition: 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
-  background: #333638 !important;
-  color: #eef0f2 !important;
+  /* background: #333638 !important; */
+  color: #818d98 !important; 
 }
 
 .nice-dates-day:hover {
@@ -143,7 +138,7 @@ button.profile-btn {
 }
 
 .nice-dates-navigation_previous, .nice-dates-navigation_next {
-  color: #eef0f2 !important;
+  /* color: #eef0f2 !important; */
   height: 50px !important;
   padding: 0 !important;
 }
@@ -159,6 +154,14 @@ button.profile-btn {
   position: absolute !important; 
   top: 100%;
   right: 0;
+}
+
+.journal-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 @keyframes stroke-dashoffset-animation {

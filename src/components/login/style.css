@@ -14,11 +14,9 @@ h6,
 label,
 span {
   font-weight: 500;
-  color: #eef0f2 !important;
 }
 
 .form-control:focus {
-  border-color: #167bff;
   box-shadow: none;
 }
 
@@ -52,7 +50,7 @@ input {
   border-radius: 10px !important;
   background: linear-gradient(145deg, #2b2d2f, #333638);
   min-width: 100%;
-  color: #eef0f2 !important;
+  /* color: #eef0f2 !important; */
   box-shadow: 3px 3px 10px #2a2c2d, -3px -3px 10px #36393b;
   padding: 6px 6px;
 }

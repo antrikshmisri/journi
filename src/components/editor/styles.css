@@ -1,0 +1,86 @@
+.is-active {
+    background: #f18303 !important;
+    color: #36393b;
+}
+
+.ProseMirror {
+    outline: none;
+    padding: 0.5rem;
+    overflow-y: auto;
+}
+
+.ProseMirror blockquote {
+    color: #eef0f2;
+    background: #36393b;
+    /* box-shadow: 7px 7px 16px #2a2c2d, -7px -7px 16px #36393b; */
+}
+
+.ProseMirror pre {
+    color: #eef0f2;
+    /* box-shadow: 7px 7px 16px #2a2c2d, -7px -7px 16px #36393b; */
+}
+
+.ProseMirror pre code {
+    color: #eef0f2;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1rem;
+}
+
+.edit-container {
+    width: 100%;
+    min-height: 100vh;
+    z-index: 180;
+    /* background: #333638 !important; */
+    overflow-y: hidden;
+}
+
+.edit-container .heading {
+    width: 100%;
+    padding: 5px;
+    background: #f18303;
+}
+
+.menu-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+li {
+    list-style-type: disc;
+} 
+
+li:before {
+    content: "" !important;
+}
+
+ul.rtf {
+    padding: 0;
+    margin: 0;
+}
+
+ul.rtf li::before {
+    content: "";
+}
+
+.editor-toolbar .editor-btn-group {
+    margin: 0 !important;
+    width: 100% !important;
+    height: 40px !important;
+    margin-bottom: 20px !important;
+}
+
+.editor-toolbar .editor-btn-group .editor-btn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.editor-btn.active {
+    background: #f18303 !important;
+}
+
+.editor-btn.inactive {
+    background: none !important;
+}

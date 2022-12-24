@@ -14,11 +14,9 @@
   label,
   span {
     font-weight: 500;
-    color: #eef0f2 !important;
   }
   
   .form-control:focus {
-    border-color: #167bff;
     box-shadow: none;
   }
   
