@@ -5,13 +5,13 @@ import Navbar from "./Navbar";
 import { Button } from "react-bootstrap";
 import Menu from "./menu/Menu";
 
-const ProtectedRoute = ({ children, isAuthenticated }) => {
+const ProtectedRoute = ({ children, isAuthenticated, setTheme }) => {
   if (!isAuthenticated) {
     return <Navigate to="/login" />;
   } else {
     return (
         <div id="outer-container" style={{ height: "99%" }}>
-        <Navbar />
+        <Navbar setTheme={setTheme}/>
           <Menu>
             <Button className="btn btn-primary btn-block mt-4 action-btn">
               Settings
