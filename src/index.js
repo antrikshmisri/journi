@@ -14,6 +14,8 @@ import {
   isLoaded,
 } from "react-redux-firebase";
 import firebase, { config } from "./firebase";
+import { Loading } from "@geist-ui/core";
+import { Container } from "react-bootstrap";
 
 const store = createStore(
   rootReducer,
@@ -27,7 +29,15 @@ const AuthIsReady = ({ children }) => {
   const auth = useSelector((state) => state.firebase.auth);
 
   if (!isLoaded(auth)) {
-    return <div>Loading...</div>;
+    return (
+      <Container
+        fluid
+        className="d-flex justify-content-center align-items-center"
+        style={{ height: "100vh" }}
+      >
+        <Loading type="warning" />
+      </Container>
+    );
   } else {
     return children;
   }
