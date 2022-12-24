@@ -25,6 +25,7 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
     },
+    icon: __dirname + "./journi-logo.png",
   });
 
   // and load the index.html of the app.
