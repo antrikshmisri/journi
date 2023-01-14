@@ -1,6 +1,7 @@
 {
   "projects": {
-    "journi": "journi-13302"
+    "journi": "journi-13302",
+    "default": "journi-13302"
   },
   "targets": {}
 }
