@@ -68,6 +68,7 @@ ul.rtf li::before {
     width: 100% !important;
     height: 40px !important;
     margin-bottom: 20px !important;
+    overflow-x: auto !important;
 }
 
 .editor-toolbar .editor-btn-group .editor-btn {
